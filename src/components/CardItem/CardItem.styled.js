@@ -1,5 +1,7 @@
 import styled from "styled-components";
+
 export const Container = styled.div`
+ position: relative;
  width: 380px;
  height: 460px;
  background: linear-gradient(
@@ -36,7 +38,7 @@ export const Line = styled.div`
   inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
 `;
 export const Avatar = styled.div`
- position: fixed;
+  position: absolute;
  width: 80px;
  height: 80px;
  left: 150px;
@@ -63,6 +65,7 @@ export const Image = styled.img`
  height: 62px;
  left: 9.48px;
  top: 9.42px;
+ border-radius: 85.9232px;
 `;
 export const Text = styled.span`
  font-family: "Montserrat";
@@ -93,33 +96,7 @@ export const Btn = styled.button`
  height: 50px;
  left: 92px;
  top: 374px;
- background: #ebd8ff;
- box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
- border-radius: 10.3108px;
- border-color: transparent;
- font-family: "Montserrat";
- font-weight: 600;
- font-size: 18px;
- line-height: 22px;
- text-transform: uppercase;
- color: #373737;
- order: 0;
- flex-grow: 0;
-`;
-
-export const BtnFollowing = styled.button`
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
- padding: 14px 28px;
- gap: 6px;
- position: absolute;
- width: 196px;
- height: 50px;
- left: 92px;
- top: 374px;
- background: #5cd3a8;
+ background: ${(p) => (p.active ? "#5cd3a8" : "#ebd8ff")};
  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
  border-radius: 10.3108px;
  border-color: transparent;

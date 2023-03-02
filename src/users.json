@@ -1,0 +1,65 @@
+[
+{
+"id": 1,
+"user": "Elon Reeve Musk",
+"tweets": 777,
+"followers": 100500,
+"avatar": "boy"
+},
+{
+"id": 2,
+"user": "Tori",
+"tweets": 259,
+"followers": 10258,
+"avatar": "photo1"
+},
+{
+"id": 3,
+"user": "Helen",
+"tweets": 658,
+"followers": 25986,
+"avatar": "photo2"
+},
+{
+"id": 4,
+"user": "Liza",
+"tweets": 789,
+"followers": 125690,
+"avatar":"photo3"
+},
+{
+"id": 5,
+"user": "Milena",
+"tweets": 945,
+"followers": 108900,
+"avatar": "photo4"
+},
+{
+"id": 6,
+"user": "Nata",
+"tweets": 567,
+"followers": 189450,
+"avatar": "photo5"
+},
+{
+"id": 7,
+"user": "Mira",
+"tweets": 77,
+"followers": 1800,
+"avatar": "photo6"
+},
+{
+"id": 8,
+"user": "Salli",
+"tweets": 9,
+"followers": 125,
+"avatar": "photo7"
+},
+{
+"id": 9,
+"user": "Hezer",
+"tweets": 457,
+"followers": 56890,
+"avatar": "photo8"
+}
+]

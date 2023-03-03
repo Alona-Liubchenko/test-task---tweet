@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import logo from "../../images/logo.png";
 import picture from "../../images/picture.png";
 import {
@@ -13,24 +13,11 @@ import {
  Text,
  Btn,
 } from "./CardItem.styled";
-export const CardItem = ({ item }) => {
- const { user, tweets, followers, avatar } = item;
- const [follow, setFollow] = useState(followers);
- const [active, setActive] = useState(false);
- useEffect(() => {
-  localStorage.setItem("key", JSON.stringify(
-    {follow, active}));
-  let storage = localStorage.getItem(follow, active);
- if( storage){return JSON.parse(storage)};
- }, [follow, active]);
- const addFollow = () => {
-  setFollow((follow) => follow + 1);
-  setActive(!active);
- };
- const deleteFollow = () => {
-  setFollow((follow) => follow - 1);
-  setActive(!active);
- };
+
+
+export const CardItem = ({ item={}, addFollow, deleteFollow, active}) => {
+    const { user, tweets, followers, avatar } = item;
+
  return (
   <div>
    <Container>

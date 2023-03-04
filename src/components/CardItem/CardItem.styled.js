@@ -18,7 +18,6 @@ export const BoxLogo = styled.div`
  top: 20px;
  left: 20px;
 `;
-
 export const BoxPicture = styled.div`
  position: absolute;
  width: 308px;
@@ -26,7 +25,6 @@ export const BoxPicture = styled.div`
  left: 36px;
  top: 28px;
 `;
-
 export const Line = styled.div`
  position: absolute;
  width: 380px;
@@ -38,7 +36,7 @@ export const Line = styled.div`
   inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
 `;
 export const Avatar = styled.div`
-  position: absolute;
+ position: absolute;
  width: 80px;
  height: 80px;
  left: 150px;
@@ -49,7 +47,6 @@ export const Avatar = styled.div`
  box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
   inset 0px -2.19582px 4.39163px #ae7be3, inset 0px 4.39163px 3.29372px #fbf8ff;
 `;
-
 export const Elips = styled.div`
  position: absolute;
  width: 62px;

@@ -19,6 +19,7 @@ export const BoxLogo = styled.div`
  left: 20px;
 `;
 export const BoxPicture = styled.div`
+display: block;
  position: absolute;
  width: 308px;
  height: 168px;

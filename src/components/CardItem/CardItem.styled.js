@@ -14,12 +14,13 @@ export const Container = styled.div`
  border-radius: 20px;
 `;
 export const BoxLogo = styled.div`
+ display: flex;
  position: absolute;
  top: 20px;
  left: 20px;
 `;
 export const BoxPicture = styled.div`
-display: block;
+display: flex;
  position: absolute;
  width: 308px;
  height: 168px;
@@ -106,4 +107,8 @@ export const Btn = styled.button`
  color: #373737;
  order: 0;
  flex-grow: 0;
+ cursor: pointer;
+ &:hover {
+  background: ${(p) => (p.active ? "#ebd8ff" :"#5cd3a8")};
+ }
 `;

@@ -16,10 +16,9 @@ import {
 } from "./CardItem.styled";
 
 export const CardItem = ({ item }) => {
- const { id, user, tweets, followers, avatar } = item;
+    const { id, user, tweets, followers, avatar } = item;
  const KEY_FOLLOWERS = `user${id}.followers:`;
- const KEY_ACTIVE = `user${id}.active:`;
-
+    const KEY_ACTIVE = `user${id}.active:`;
  const [follower, setFollower] = useState(() => {
   return JSON.parse(localStorage.getItem(KEY_FOLLOWERS)) ?? followers;
  });
@@ -28,21 +27,21 @@ export const CardItem = ({ item }) => {
  });
 
  useEffect(() => {
-  localStorage.setItem(KEY_FOLLOWERS, JSON.stringify(follower));
-  localStorage.setItem(KEY_ACTIVE, JSON.stringify(active));
+ if(follower && active){  localStorage.setItem(KEY_FOLLOWERS, JSON.stringify(follower));
+ localStorage.setItem(KEY_ACTIVE, JSON.stringify(active));}
+
  }, [KEY_FOLLOWERS, KEY_ACTIVE, follower, active]);
 
  const toggleBtn = () => {
   if (!active) {
-   setFollower(follower + 1);
+   setFollower(follower => follower + 1);
    setActive(!active);
   } else {
-   setFollower(follower - 1);
+   setFollower((follower) => follower - 1);
    setActive(!active);
   }
  };
  const numberFormat = numeral(follower).format("0,0");
-
  return (
   <div>
    <Container>
